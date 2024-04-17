@@ -6,6 +6,7 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   // Disable the submit button immediately
   document.getElementById('submit').disabled = true;
+  
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
   .then(response => alert("شكرا لك ،،، تمت العملية بنجاح" ))
   .then(() => { window.location.reload(); })
