@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recruitmentStyles.css">
+
+    <link rel="stylesheet" href="generalForm.css">
+    <script src="navbar.js"></script>
+
+    <title>هيك الكيك - طلب توظيف </title>
+</head>
+
+<body>
+    <div id="navbarContainer"></div>
+    <div class="container">
+        <h1>طلب توظيف</h1>
+        <hr class="customHR">
+        <div class="formDiv">
+            <form id="recruitment-form" name="recruitment-form" method="post" action="">
+                <input style="border: 0px;text-align: left;" type="text" id="currentDate" name="currentDate">
+                <div class="sub-container" id="personalInfo">
+                    <input type="text" id="fullName" name="fullName" min="1" placeholder="الإسم الرباعي" required>
+                    <input type="text" id="DOB" name="DOB" placeholder="تاريخ الميلاد يوم/شهر/سنة" required>
+                    <input type="text" id="mobile" name="mobile" placeholder="رقم الجوال مثال 0791234567" required>
+                    <input type="text" id="email" name="email" placeholder="البريد الالكتروني مثال abc@def.com" required>
+                    <input type="text" id="address" name="address" placeholder="العنوان مثال اربد الحي شرقي بجانب مخابز نبيل" required>
+
+                    <select id="materialStatus" name="materialStatus">
+                        <!-- Populate employee IDs dynamically (e.g., from a database) -->
+                        <option value="">اختيار الحالة الاجتماعية</option>
+                        <option value="1">متزوجة</option>
+                        <option value="2">غير متزوجة</option>
+                        <!-- Add more options as needed -->
+                    </select>
+
+                    <!-- <label for="itemCategory">التصنيف:</label> -->
+                    <select id="lastQualification" name="lastQualification">
+                        <option value="">اختيار المؤهل</option>
+                        <option value="1">اعدادي</option>
+                        <option value="2">توجيهي</option>
+                        <option value="3">دبلوم</option>
+                        <option value="4">بكالوريوس</option>
+                        <option value="5">غير ذلك</option>
+                    </select>
+
+                    
+                    <textarea id="experience1" name="experience1" style="direction: rtl;" placeholder="خبرة 1"></textarea>
+                    <textarea id="experience2" name="experience2" style="direction: rtl;" placeholder="خبرة 2"></textarea>
+                    <textarea id="experience3" name="experience3" style="direction: rtl;" placeholder="خبرة 3"></textarea>
+                    <div style="direction: rtl;">
+                        <input type="submit" value="تسجيل البيانات" id="submit">
+                        <label style="text-align: center;">الرجاء الضغط مرة واحده فقط على تسجيل البينات والانتظار حتى تظهر رسالة تأكيد حفظ البيانات</label>
+                        <!-- <button type="submit">تسجيل البيانات</button> -->
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+    <!-- </div> -->
+
+    <!-- <script src="Google Sheet.js"></script> -->
+    <script src="recruitment.js"></script>
+</body>
+
+</html>
